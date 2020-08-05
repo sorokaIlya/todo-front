@@ -11,3 +11,157 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ul{
+  list-style: none;
+  padding: 0;
+}
+.header{
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.header-nav{
+  margin: 0;
+  padding: 30px 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav div{
+  display: flex;
+  align-items: center;
+
+}
+.header-nav li{
+  margin-left: 30px;
+  color:inherit;
+}
+.header-nav div li{
+  padding: 5px 0;
+  border-bottom: 1px solid transparent;
+}
+.header-nav div li:hover{
+  border-bottom: 1px solid orange;
+}
+.header-nav li:last-child{
+  align-self: center;
+
+}
+.header-nav li a{
+  padding: 5px;
+  color:#000;
+  text-decoration: none;
+}
+.main-todos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+  padding: 0 25px;
+}
+.main-todos ul{
+  width: 70%;
+}
+.todo-enter{
+  border:2px solid orange;
+  margin-right: 40px;
+  padding: 10px 0 10px 25px;
+  border-radius: 30px;
+  outline: none;
+  min-width: 250px;
+}
+.add_My_Deal{
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border-radius: 20px;
+  border:1px solid transparent;
+}
+.add_My_Deal:hover{
+  border:1px solid #123d;
+}
+.todo-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border: 1px solid lightpink;
+  border-radius: 40px;
+  padding: 5px 25px;
+}
+.todo-task{
+  cursor: pointer;
+  margin-right: 50px;
+  padding-right: 50px;
+  border-bottom: 1px solid #eee;
+  border-bottom-width: initial;
+}
+.buttons-editions{
+  margin-left: 25px;
+}
+.todo-task.fulfilled{
+  text-decoration: line-through;
+}
+
+/*btn - styles*/
+button{
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  background-color:transparent;
+  border:1px solid orange;
+  padding: 8px;
+}
+.sign-out{
+  border:1px solid orange;
+  border-radius: 20px;
+  background-color:transparent;
+  outline: none;
+}
+.but-delete{
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 3px solid red;
+  position: relative;
+  background-size: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./img/trash.svg");
+  padding: 20px;
+}
+.but-cross{
+  padding: 20px;
+  border-radius: 50%;
+  border: 3px solid green;
+  position: relative;
+  background-image: url("./img/edit.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 26px;
+}
+
+
+/*loader*/
+.loader{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+}
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
